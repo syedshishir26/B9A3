@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9d25f56c1d.js" crossorigin="anonymous"></script>
+    <!-- Tailwind and Daisy-UI cdn Installation -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Manrope font Installation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pri_color: '#FF4240',
+                        color_t_nav: '#424247',
+                        color_text: '#131318',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="mx-4 lg:mx-32">
+        <!-- Navigation -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-2xl md:text-4xl font-extrabold">Hockey<span class="text-pri_color">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-base text-pri_color font-bold"><a>Home</a></li>
+                        <li class="text-base text-color_t_nav font-normal"><a>About</a></li>
+                        <li class="text-base text-color_t_nav font-normal"><a>Pages</a></li>
+                        <li class="text-base text-color_t_nav font-normal"><a>Blog</a></li>
+                        <li class="text-base text-color_t_nav font-normal"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass text-color_t_nav pr-6 hidden md:block"></i>
+                    <a class="btn bg-pri_color text-white font-bold text-base md:text-lg">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner secton -->
+        <div>
+            <div class="carousel w-full">
+                <!-- slide-1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div
+                        class="absolute justify-center md:justify-start flex gap-3 transform -translate-y-1/2 left-6 md:left-16 right-5 bottom-5">
+                        <a href="#slide2" class="btn btn-circle bg-color_text text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-color_text text-white border-none">❯</a>
+                    </div>
+                    <div
+                        class="absolute md:p-4 lg:p-8 rounded-2xl bg-color_text text-white hidden md:max-w-[520px] md:flex flex-col gap-4 transform -translate-y-1/2 right-14 -bottom-16">
+                        <h2 class="font-extrabold text-2xl">Meet all the heroes from the field</h2>
+                        <p class="font-medium text-base">Dive into the stories of diverse heroes.celebrating innovators
+                            and community champions who redefine greatness across various domains.</p>
+                    </div>
+                </div>
+                <!-- slide-2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div
+                        class="absolute justify-center md:justify-start flex gap-3 transform -translate-y-1/2 left:6 md:left-16 right-5 bottom-5">
+                        <a href="#slide1" class="btn btn-circle bg-color_text text-white border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-color_text text-white border-none">❯</a>
+                    </div>
+                    <div
+                        class="absolute md:p-4 lg:p-8 rounded-2xl bg-color_text text-white hidden md:max-w-[520px] md:flex flex-col gap-4 transform -translate-y-1/2 right-14 -bottom-16">
+                        <h2 class="font-extrabold text-2xl">Meet all the heroes from the field</h2>
+                        <p class="font-medium text-base">Dive into the stories of diverse heroes.celebrating innovators
+                            and community champions who redefine greatness across various domains.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:hidden p-3 rounded-2xl bg-color_text text-white flex flex-col gap-4 ">
+                <h2 class="font-extrabold text-2xl">Meet all the heroes from the field</h2>
+                <p class="font-medium text-base">Dive into the stories of diverse heroes.celebrating innovators and
+                    community champions who redefine greatness across various domains.</p>
+            </div>
+        </div>
+        <!-- Club Section -->
+        <div>
+            <!-- Club text -->
+            <div class="border-t-2 border-b-2 border-dashed text-center py-8 mt-12">
+                <h1 class="text-4xl font-extrabold">Professional Hockeys Club</h1>
+                <p class="max-w-[600px] mx-auto">Premier ice hockey club dedicated to excellence, fostering teamwork,
+                    and thrilling fans with elite-level competition in the world of professional hockey.</p>
+            </div>
+            <!-- radial progress -->
+            <div class="flex gap-3 flex-col md:flex-row justify-around py-8">
+                <div class="text-center flex flex-col gap-4">
+                    <div class="radial-progress mx-auto rotate-90 text-red-500 border-primary" style="--value:87;"
+                        role="progressbar"><span class="-rotate-90 text-xl text-color_text font-extrabold">87%</span>
+                    </div>
+                    <h2 class="font-bold text-lg ">Prayer Facility</h2>
+                    <p class="text-base max-w-56 mx-auto">The prayer facility provides a serene space for individuals to
+                        engage in contemplation, fostering spiritual connection and moments of reflection.</p>
+                </div>
+                <div class="text-center flex flex-col gap-4">
+                    <div class="radial-progress mx-auto rotate-90 text-green-500 border-primary" style="--value:95;"
+                        role="progressbar"><span class="-rotate-90 text-xl text-color_text font-extrabold">95%</span>
+                    </div>
+                    <h2 class="font-bold text-lg">Experienced Coach</h2>
+                    <p class="text-base max-w-56 mx-auto">An experienced coach possesses a wealth of knowledge, and a
+                        keen ability to guide individuals towards personal goals.</p>
+                </div>
+                <div class="text-center flex flex-col gap-4">
+                    <div class="radial-progress mx-auto rotate-90 text-amber-500 border-primary" style="--value:90;"
+                        role="progressbar"><span class="-rotate-90 text-xl text-color_text font-extrabold">90%</span>
+                    </div>
+                    <h2 class="font-bold text-lg">Senior Player</h2>
+                    <p class="text-base max-w-56 mx-auto">The senior player brings a wealth of experience and leadership
+                        to the team, contributing to its success on and off the field.</p>
+                </div>
+                <div class="text-center flex flex-col gap-4">
+                    <div class="radial-progress mx-auto rotate-90 text-blue-500 border-primary" style="--value:80;"
+                        role="progressbar"><span class="-rotate-90 text-xl text-color_text font-extrabold">80%</span>
+                    </div>
+                    <h2 class="font-bold text-lg">Training Ground</h2>
+                    <p class="text-base max-w-56 mx-auto">The training ground is where dedication meets sweat, shaping
+                        athletes through rigorous practice and skill development.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Programm Section -->
+        <div>
+            <!-- Program text -->
+            <div class="border-t-2 border-b-2 border-dashed text-center py-8 mt-12">
+                <h1 class="text-4xl font-extrabold">Program Sections</h1>
+                <p class="max-w-[600px] mx-auto">Explore diverse fitness programs at our club, ensuring personalized well-being with expert guidance for holistic progress and individualized sessions tailored to your needs.</p>
+            </div>
+            <!-- Program Images -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 ">
+                <!-- Program 1 -->
+                <div class="hero min-h-80 rounded-2xl relative" style="background-image: url(Images/2.png);">
+                    <div class="hero-overlay bg-opacity-50 rounded-2xl "></div>
+                    <div class="hero-content text-neutral-content absolute left-4 bottom-4 md:left-10 md:bottom-10">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-xl md:text-2xl font-extrabold">Hello there</h1>
+                        <p class="mb-5 text-sm md:text-base font-medium ">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn bg-pri_color border-none text-white text-xl font-bold">Register Now</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Program 2 -->
+                <div class="hero min-h-80 rounded-2xl relative" style="background-image: url(Images/3.png);">
+                    <div class="hero-overlay bg-opacity-50 rounded-2xl "></div>
+                    <div class="hero-content text-neutral-content absolute left-4 bottom-4 md:left-10 md:bottom-10">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-xl md:text-2xl font-extrabold">Hello there</h1>
+                        <p class="mb-5 text-sm md:text-base font-medium ">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn bg-pri_color border-none text-white text-xl font-bold">Register Now</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Program 3 -->
+                <div class="hero min-h-80   md:min-h-96 rounded-2xl relative md:col-span-2" style="background-image: url(Images/4.png);">
+                    <div class="hero-overlay bg-opacity-50 rounded-2xl "></div>
+                    <div class="hero-content text-neutral-content absolute left-4 bottom-4 md:left-10 md:bottom-10">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-xl md:text-2xl font-extrabold">Hello there</h1>
+                        <p class="mb-5 text-sm md:text-base font-medium ">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn bg-pri_color border-none text-white text-xl font-bold">Register Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
